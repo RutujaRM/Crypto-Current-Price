@@ -1,0 +1,406 @@
+body{
+    margin: 0%;
+    background-color:white;
+}
+
+
+/* here is navigation bar */
+
+nav{
+    background-image: linear-gradient(315deg, #c7e9fb 0%, #e61d8c 74%);
+    height: 7rem;
+    padding: 0.25rem 1.5rem; 
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #90e0ef; 
+
+}
+
+
+.nav_logo
+{
+   height: 5rem;
+   width: 5rem;
+   margin: 0px 0px 0px 10px;
+}
+.nav > div{
+    
+    align-items: center;
+    
+}
+
+
+
+@media screen and (max-width: 600px){ /*When screen size less than max width heading is hide */
+nav h2
+ {
+    display: none;
+}
+}
+
+/* Animation to title changing automatically */
+.name_swap h2:after   /* swapping text by animation we  use after */
+{
+    content: 'Cryptocurrencies ';      /* here my text which i want to display */
+    animation: text 10s infinite;    /*here is text is animation name */
+    color: white;
+    font-family: cursive;
+    font-size: xx-large;
+}
+@keyframes text
+{
+    20%{
+        content:'Cryptocurrency View';
+    }
+    40%{
+        content: 'Digital Currency';
+    }
+    60%{
+        content: 'Gold 2.0';
+    }
+    80%{
+        content: 'Peer-to-Peer Money';
+    }
+    100%{
+        content: 'DeFi';
+    }
+
+
+}
+   
+.bit_machine{
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    box-decoration-break: clone;
+    box-shadow: 10px 30px 40px #a4508b ;
+    top: 0px;
+    left: 0px;
+    margin: -5rem 0rem 0rem 30rem;
+   
+   
+    
+}
+
+.digital_art{
+    height: 25rem;
+    width: 35rem;
+    align-items: center;
+    margin-top: 3rem;
+    
+    
+}
+
+
+
+
+.flex_container{
+    display: flex;
+   flex-wrap: wrap;
+   gap: 2rem;       /* It gives space in between adjusted content */
+}
+
+/* Description Details */
+
+.description_price{
+    justify-content: space-around;
+   
+    
+}
+.description{
+    align-items: flex-start;  /*to get image from starting of flex */
+    gap: 2rem;                /*to get space in flex */
+}
+.width_40{
+    width: 40vw;
+}
+
+.text_justify{
+    text-align: justify;
+}
+
+.margin_top{
+    margin-top: 2rem;
+
+}
+.history_data{
+
+    position: relative;
+    height: 15rem;
+    width: 70vw;
+    margin: auto;
+    margin-top: 5rem;
+   
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+#coin_description{
+
+    width:800px;
+    letter-spacing: 1px;   /* to space between characters*/
+    line-height: 25px;
+    box-shadow: 20px 10px 10px #A4508B;
+    border-radius: 10px 5px 30px 5px;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    font-weight: bolder;
+    font-style: inherit;
+    color: white;
+    padding: 15px;
+    font-size: medium;
+    border: 4px solid whitesmoke;
+}
+
+#coin_image{
+    box-shadow: 5px 30px 5px black;
+    border-radius: 20px;
+    top: 0px;
+    right: 0px;
+}
+
+
+/* Price container Table chart */
+table{
+    box-shadow:5px 20px 10px #A4508B;
+    border-radius: 20px;
+    height: 10rem;
+    width: 13rem;
+    margin-left: 10rem;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    color: white;
+    border: 2px solid whitesmoke;
+}
+
+
+td {
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+tr{
+    height: 20px;
+}
+
+.price h1{
+    margin-left: 15rem;
+    font-style: italic;
+    font-variant: small-caps;
+    
+}
+
+#chain_image{
+    height: 30rem;
+    width: 30rem;
+    position: relative;
+    
+
+}
+
+#cartoon_man{
+    height: 30rem;
+    width: 25rem;
+   margin: 0rem 0rem 0rem 0rem;
+  
+   position: relative;
+  
+}
+
+
+
+
+
+/* Graph */
+
+#myChart{
+    background-color: #36096d;
+background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%); 
+   
+}
+
+.history_data h1{
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.coin{
+    height: 20rem;
+    width: 20rem;
+    margin: 25rem 0rem 0rem 1rem;
+    border-radius: 20rem;
+}
+
+
+
+/* footer */
+
+.footer{
+    background-color: hwb(179 6% 9%);
+    background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+    height: 53rem;
+    text-align: center;
+    margin-top: 10rem;
+    background-color: white;
+    
+   
+}
+
+
+
+.footer_div{
+     background-color: #0091f7;
+     height: 10rem;
+     width: 50rem;
+     margin: -5rem 0rem 0rem 25rem;
+     border-radius: 10px;
+     box-shadow: 20px 20px 10px black;
+      
+      position: absolute;          /*to overlap div to another div */
+      z-index: 2;
+}
+
+.footer_div h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: ghostwhite;
+}
+
+section > .footer_div :hover{
+    top: -5rem;
+    left: -5rem;
+    transition: 10s all;
+}
+
+#input_text{
+    height: 3.5rem;
+    width: 35rem;
+    border-radius: 5rem;
+    text-align: center;
+    margin: 0rem 0rem 0rem 3rem;
+    box-shadow: 1rem 2rem 3rem black;
+    font-weight: bold;
+    font-size: large;
+    border: 5px solid white;
+    color: #0091f7;
+
+}
+
+#input_btn{
+    height: 3.5rem;
+    width: 8rem;
+    border-radius: 1rem;
+    box-shadow: 0.50rem 1rem 2rem black;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+   
+
+    
+}
+
+.footer_content{
+    margin-top: 10rem;
+    width: 30%;
+}
+.footer_content .p{
+   font-size: x-large;
+    font-weight: bolder;
+    letter-spacing: 0.2px;
+    
+  }
+  .footer_content_img{
+    width: 70%;
+  }
+
+  #bit_purple{
+    height: 15rem;
+    width: 22rem;
+    margin: -10rem 0rem 0rem 70rem;
+    border-radius: 10px;
+  }
+
+ul{
+  list-style: none;
+ 
+  
+}
+li{
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    text-align: justify;
+    
+   
+  
+}
+
+.list_title{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: large;
+    color: white;
+    text-transform: uppercase;
+    text-align: justify;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  
+
+}
+#hr2{
+      width: 20rem;
+}
+
+.fa-brands{
+    padding: 0.5rem;
+   
+}
+
+.fa-facebook{
+    color: #3b5998;
+    
+}
+
+.fa-youtube{
+    color: red;
+    
+   
+}
+
+.fa-instagram{
+    color: #C13584;
+}
+
+.fa-twitter{
+  color: #00acee;  
+}
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+
+/* here we create a animation part */
+@keyframes animated_scrollbar{  /* we use this keyword to create animation and  assign some name */
+
+    from{              /* start a animation*/
+        left: 0%;
+    }
+
+   to{                 /* end a animation*/
+       left: -100%;
+   }
+}
+
+hr{
+   width: 90rem;
+}
+
+.follow{
+  color: whitesmoke;
+    font-weight: bolder;
+    font-style: italic;
+}
